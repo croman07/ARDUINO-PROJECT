@@ -1,8 +1,8 @@
 
 #define Velocity 4000
 
-
-int steps1 = 2;
+//Define the variables to the pins 
+int steps1 = 2; 
 int steps2 = 4;
 int direction1 = 3;
 int direction2 = 5;
@@ -13,6 +13,7 @@ int x = 3;
 int button1 = 11;
 int button2 = 12;
 
+// the setup function runs once when you press reset or power the board
 void setup() {
 
   pinMode(steps1, OUTPUT);
@@ -25,6 +26,7 @@ void setup() {
   pinMode(button2, INPUT_PULLUP);
 }
 
+// the loop function runs over and over again forever
 void loop() {
 if (button1 == LOW){
   line(200, true);   //front
